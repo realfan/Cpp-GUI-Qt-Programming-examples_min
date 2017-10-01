@@ -1,7 +1,6 @@
-#include <QtGui>
-
 #include "iconeditor.h"
-
+#include <QMouseEvent>
+#include <QPainter>
 IconEditor::IconEditor(QWidget *parent)
     : QWidget(parent)
 {
@@ -84,7 +83,11 @@ void IconEditor::paintEvent(QPaintEvent *event)
     for (int i = 0; i < image.width(); ++i) {
         for (int j = 0; j < image.height(); ++j) {
             QRect rect = pixelRect(i, j);
+#if (QT_VERSION >= QT_VERSION_CHECK(5, 0, 0))
+            if (!event->region().intersected(rect).isEmpty()) {
+#else
             if (!event->region().intersect(rect).isEmpty()) {
+#endif
                 QColor color = QColor::fromRgba(image.pixel(i, j));
                 if (color.alpha() < 255)
                     painter.fillRect(rect, Qt::white);

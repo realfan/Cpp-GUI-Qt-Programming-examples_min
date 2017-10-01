@@ -1,8 +1,15 @@
-#include <QtGui>
 #include <QtSql>
 
 #include "employeeform.h"
-
+#include <QLineEdit>
+#include <QLabel>
+#include <QComboBox>
+#include <QPushButton>
+#include <QHBoxLayout>
+#include <QGridLayout>
+#include <QDateEdit>
+#include <QDialogButtonBox>
+#include <QDataWidgetMapper>
 EmployeeForm::EmployeeForm(int id, QWidget *parent)
     : QDialog(parent)
 {

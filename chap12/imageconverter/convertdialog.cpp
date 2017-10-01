@@ -1,6 +1,8 @@
-#include <QtGui>
-
 #include "convertdialog.h"
+#include <QPushButton>
+#include <QDir>
+#include <QFileDialog>
+#include <QFileInfo>
 
 ConvertDialog::ConvertDialog(QWidget *parent)
     : QDialog(parent)

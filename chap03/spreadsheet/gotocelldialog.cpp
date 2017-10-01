@@ -1,7 +1,5 @@
-#include <QtGui>
-
 #include "gotocelldialog.h"
-
+#include <QPushButton>
 GoToCellDialog::GoToCellDialog(QWidget *parent)
     : QDialog(parent)
 {

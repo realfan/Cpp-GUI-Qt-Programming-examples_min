@@ -1,7 +1,11 @@
-#include <QtGui>
-
 #include "colornamesdialog.h"
-
+#include <QListView>
+#include <QLabel>
+#include <QLineEdit>
+#include <QComboBox>
+#include <QGridLayout>
+#include <QStringListModel>
+#include <QSortFilterProxyModel>
 ColorNamesDialog::ColorNamesDialog(QWidget *parent)
     : QDialog(parent)
 {

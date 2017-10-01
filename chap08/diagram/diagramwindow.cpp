@@ -1,9 +1,13 @@
-#include <QtGui>
-
 #include "diagramwindow.h"
 #include "link.h"
 #include "node.h"
 #include "propertiesdialog.h"
+#include <QGraphicsScene>
+#include <QGraphicsView>
+#include <QClipboard>
+#include <QColorDialog>
+#include <QMenuBar>
+#include <QToolBar>
 
 DiagramWindow::DiagramWindow()
 {

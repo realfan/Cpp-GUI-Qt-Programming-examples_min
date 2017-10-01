@@ -1,7 +1,12 @@
-#include <QtGui>
-
 #include "settingsviewer.h"
-
+#include <QTreeWidget>
+#include <QDialogButtonBox>
+#include <QVBoxLayout>
+#include <QHeaderView>
+#include <QLabel>
+#include <QLineEdit>
+#include <QGridLayout>
+#include <QSettings>
 SettingsViewer::SettingsViewer(QWidget *parent)
     : QDialog(parent)
 {
@@ -12,9 +17,13 @@ SettingsViewer::SettingsViewer(QWidget *parent)
     treeWidget->setColumnCount(2);
     treeWidget->setHeaderLabels(
             QStringList() << tr("Key") << tr("Value"));
+#if (QT_VERSION >= QT_VERSION_CHECK(5, 0, 0))
+treeWidget->header()->setSectionResizeMode(0, QHeaderView::Stretch);
+    treeWidget->header()->setSectionResizeMode(1, QHeaderView::Stretch);
+#else
     treeWidget->header()->setResizeMode(0, QHeaderView::Stretch);
     treeWidget->header()->setResizeMode(1, QHeaderView::Stretch);
-
+#endif
     buttonBox = new QDialogButtonBox(QDialogButtonBox::Open
                                      | QDialogButtonBox::Close);
 

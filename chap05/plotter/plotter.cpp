@@ -1,8 +1,10 @@
-#include <QtGui>
 #include <cmath>
 
 #include "plotter.h"
-
+#include <QToolButton>
+#include <QStylePainter>
+#include <QStyleOptionFocusRect>
+#include <QMouseEvent>
 Plotter::Plotter(QWidget *parent)
     : QWidget(parent)
 {
@@ -215,7 +217,7 @@ void Plotter::updateRubberBandRegion()
 void Plotter::refreshPixmap()
 {
     pixmap = QPixmap(size());
-    pixmap.fill(this, 0, 0);
+    //pixmap.fill(this, 0, 0);   //this function is deprecated
 
     QPainter painter(&pixmap);
     painter.initFrom(this);

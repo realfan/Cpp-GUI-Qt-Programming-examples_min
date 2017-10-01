@@ -1,8 +1,9 @@
-#include <QtGui>
-
 #include "trackdelegate.h"
 #include "trackeditor.h"
-
+#include <QTableWidget>
+#include <QDialogButtonBox>
+#include <QPushButton>
+#include <QVBoxLayout>
 Track::Track(const QString &title, int duration)
 {
     this->title = title;

@@ -1,8 +1,11 @@
-#include <QtGui>
-
 #include "imagewindow.h"
 #include "ui_resizedialog.h"
-
+#include <QStatusBar>
+#include <QCloseEvent>
+#include <QFileDialog>
+#include <QMessageBox>
+#include <QMenuBar>
+#include <QImageReader>
 ImageWindow::ImageWindow()
 {
     imageLabel = new QLabel;

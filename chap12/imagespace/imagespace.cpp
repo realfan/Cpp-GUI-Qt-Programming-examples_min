@@ -1,6 +1,7 @@
-#include <QtGui>
 #include <iostream>
-
+#include <QDir>
+#include <QImageReader>
+#include <QCoreApplication>
 qlonglong imageSpace(const QString &path)
 {
     QDir dir(path);

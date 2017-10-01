@@ -3,7 +3,14 @@
 
 #include "employeeform.h"
 #include "mainform.h"
-
+#include <QSplitter>
+#include <QPushButton>
+#include <QDialogButtonBox>
+#include <QVBoxLayout>
+#include <QTableView>
+#include <QHeaderView>
+#include <QLabel>
+#include <QMessageBox>
 MainForm::MainForm()
 {
     createDepartmentPanel();

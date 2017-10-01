@@ -49,5 +49,6 @@ QWidget *IconEditorPlugin::createWidget(QWidget *parent)
 {
     return new IconEditor(parent);
 }
-
+#if (QT_VERSION < QT_VERSION_CHECK(5, 0, 0))
 Q_EXPORT_PLUGIN2(iconeditorplugin, IconEditorPlugin)
+#endif

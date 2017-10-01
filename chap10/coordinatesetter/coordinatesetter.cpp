@@ -1,7 +1,8 @@
-#include <QtGui>
-
 #include "coordinatesetter.h"
-
+#include <QTableWidget>
+#include <QDialogButtonBox>
+#include <QPushButton>
+#include <QVBoxLayout>
 CoordinateSetter::CoordinateSetter(QList<QPointF> *coords,
                                    QWidget *parent)
     : QDialog(parent)

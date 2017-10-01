@@ -1,6 +1,13 @@
-#include <QtGui>
-
 #include "preferencedialog.h"
+#include <QDialogButtonBox>
+#include <QListWidget>
+#include <QStackedLayout>
+#include <QGridLayout>
+#include <QGroupBox>
+#include <QCheckBox>
+#include <QRadioButton>
+#include <QLabel>
+#include <QLineEdit>
 
 PreferenceDialog::PreferenceDialog(QWidget *parent)
     : QDialog(parent)

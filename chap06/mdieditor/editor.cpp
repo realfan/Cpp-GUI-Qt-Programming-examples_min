@@ -1,7 +1,10 @@
-#include <QtGui>
-
 #include "editor.h"
-
+#include <QAction>
+#include <QMessageBox>
+#include <QFileDialog>
+#include <QCloseEvent>
+#include <QTextStream>
+#include <QApplication>
 Editor::Editor(QWidget *parent)
     : QTextEdit(parent)
 {

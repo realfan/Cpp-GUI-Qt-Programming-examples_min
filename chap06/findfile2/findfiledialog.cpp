@@ -1,6 +1,9 @@
-#include <QtGui>
-
 #include "findfiledialog.h"
+#include <QLabel>
+#include <QLineEdit>
+#include <QCheckBox>
+#include <QTableWidget>
+#include <QPushButton>
 
 FindFileDialog::FindFileDialog(QWidget *parent)
     : QDialog(parent)

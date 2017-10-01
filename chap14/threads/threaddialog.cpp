@@ -1,7 +1,7 @@
-#include <QtGui>
-
 #include "threaddialog.h"
-
+#include <QPushButton>
+#include <QHBoxLayout>
+#include <QCloseEvent>
 ThreadDialog::ThreadDialog(QWidget *parent)
     : QDialog(parent)
 {

@@ -1,9 +1,10 @@
-#include <QtGui>
-
 #include "booleanmodel.h"
 #include "booleanparser.h"
 #include "booleanwindow.h"
-
+#include <QLabel>
+#include <QLineEdit>
+#include <QTreeView>
+#include <QGridLayout>
 BooleanWindow::BooleanWindow()
 {
     label = new QLabel(tr("Boolean expression:"));

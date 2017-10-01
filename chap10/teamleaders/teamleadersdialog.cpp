@@ -1,6 +1,9 @@
-#include <QtGui>
-
 #include "teamleadersdialog.h"
+#include <QStringListModel>
+#include <QListView>
+#include <QDialogButtonBox>
+#include <QPushButton>
+#include <QVBoxLayout>
 
 TeamLeadersDialog::TeamLeadersDialog(const QStringList &leaders,
                                      QWidget *parent)

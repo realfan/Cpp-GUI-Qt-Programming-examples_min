@@ -1,7 +1,7 @@
-#include <QtGui>
-
 #include "flowchartsymbolpicker.h"
-
+#include <QListWidget>
+#include <QDialogButtonBox>
+#include <QVBoxLayout>
 FlowChartSymbolPicker::FlowChartSymbolPicker(
         const QMap<int, QString> &symbolMap, QWidget *parent)
     : QDialog(parent)

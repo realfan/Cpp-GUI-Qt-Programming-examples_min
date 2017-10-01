@@ -1,8 +1,16 @@
-#include <QtGui>
-
 #include "editor.h"
 #include "mainwindow.h"
-
+#include <QMdiArea>
+#include <QTimer>
+#include <QApplication>
+#include <QCloseEvent>
+#include <QMessageBox>
+#include <QAction>
+#include <QMenuBar>
+#include <QToolBar>
+#include <QStatusBar>
+#include <QLabel>
+#include <QMdiSubWindow>
 MainWindow::MainWindow()
 {
     mdiArea = new QMdiArea;
@@ -25,7 +33,7 @@ void MainWindow::loadFiles()
     QStringList args = QApplication::arguments();
     args.removeFirst();
     if (!args.isEmpty()) {
-        foreach (QString arg, args)
+        foreach (QString arg, args) //foreach will be removed in a future version
             openFile(arg);
         mdiArea->cascadeSubWindows();
     } else {

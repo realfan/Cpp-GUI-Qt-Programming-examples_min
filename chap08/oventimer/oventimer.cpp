@@ -1,4 +1,3 @@
-#include <QtGui>
 #include <cmath>
 
 #ifndef M_PI
@@ -6,6 +5,11 @@
 #endif
 
 #include "oventimer.h"
+#include <QTimer>
+#include <QPointF>
+#include <QMouseEvent>
+#include <QPainter>
+#include <QPen>
 
 const double DegreesPerMinute = 7.0;
 const double DegreesPerSecond = DegreesPerMinute / 60;
