@@ -1,8 +1,9 @@
-#include <QtGui>
 #include <iostream>
 
 #include "xmlstreamreader.h"
-
+#include <QApplication>
+#include <QTreeWidget>
+#include <QHeaderView>
 int main(int argc, char *argv[])
 {
     QApplication app(argc, argv);
@@ -19,7 +20,11 @@ int main(int argc, char *argv[])
 
     QTreeWidget treeWidget;
     treeWidget.setHeaderLabels(labels);
+#if (QT_VERSION >= QT_VERSION_CHECK(5, 0, 0))
+    treeWidget.header()->setSectionResizeMode(QHeaderView::Stretch);
+#else
     treeWidget.header()->setResizeMode(QHeaderView::Stretch);
+#endif
     treeWidget.setWindowTitle(QObject::tr("XML Stream Reader"));
     treeWidget.show();
 

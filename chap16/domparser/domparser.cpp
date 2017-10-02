@@ -1,9 +1,8 @@
-#include <QtGui>
 #include <QtXml>
 #include <iostream>
 
 #include "domparser.h"
-
+#include <QTreeWidget>
 DomParser::DomParser(QTreeWidget *tree)
 {
     treeWidget = tree;

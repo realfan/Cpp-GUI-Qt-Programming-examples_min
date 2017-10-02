@@ -1,8 +1,8 @@
-#include <QtGui>
 #include <QtXml>
 #include <iostream>
 
 #include "xmlstreamreader.h"
+#include <QTreeWidget>
 
 XmlStreamReader::XmlStreamReader(QTreeWidget *tree)
 {

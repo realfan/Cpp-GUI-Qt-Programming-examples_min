@@ -1,8 +1,7 @@
-#include <QtGui>
 #include <iostream>
 
 #include "saxhandler.h"
-
+#include <QTreeWidget>
 SaxHandler::SaxHandler(QTreeWidget *tree)
 {
     treeWidget = tree;

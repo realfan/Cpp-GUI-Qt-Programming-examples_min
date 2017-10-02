@@ -1,14 +1,19 @@
-#include <QtGui>
 #include <QtXml>
 #include <iostream>
-
+#include <QTreeWidget>
+#include <QHeaderView>
+#include <QApplication>
 void populateTree(QTreeWidget *treeWidget)
 {
     QStringList labels;
     labels << QObject::tr("Terms") << QObject::tr("Pages");
 
     treeWidget->setHeaderLabels(labels);
+#if (QT_VERSION >= QT_VERSION_CHECK(5, 0, 0))
+    treeWidget->header()->setSectionResizeMode(QHeaderView::Stretch);
+#else
     treeWidget->header()->setResizeMode(QHeaderView::Stretch);
+#endif
     treeWidget->setWindowTitle(QObject::tr("XML Stream Writer"));
     treeWidget->show();
 
