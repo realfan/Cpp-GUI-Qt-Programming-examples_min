@@ -1,8 +1,7 @@
-#include <QtGui>
-
 #include "bronzedialog.h"
 #include "bronzestyle.h"
-
+#include <QApplication>
+#include <QLayout>
 int main(int argc, char *argv[])
 {
     QApplication app(argc, argv);

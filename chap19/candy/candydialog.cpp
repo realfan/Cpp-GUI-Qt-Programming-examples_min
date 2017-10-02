@@ -1,7 +1,11 @@
-#include <QtGui>
-
 #include "candydialog.h"
-
+#include <QComboBox>
+#include <QLineEdit>
+#include <QLabel>
+#include <QListWidget>
+#include <QCheckBox>
+#include <QDialogButtonBox>
+#include <QGridLayout>
 CandyDialog::CandyDialog(QWidget *parent)
     : QDialog(parent)
 {

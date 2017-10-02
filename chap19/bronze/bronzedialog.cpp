@@ -1,7 +1,15 @@
-#include <QtGui>
-
 #include "bronzedialog.h"
-
+#include <QDateEdit>
+#include <QLabel>
+#include <QTimeEdit>
+#include <QSpinBox>
+#include <QDoubleSpinBox>
+#include <QTreeWidget>
+#include <QHeaderView>
+#include <QCheckBox>
+#include <QDialogButtonBox>
+#include <QGridLayout>
+#include <QPushButton>
 BronzeDialog::BronzeDialog(QWidget *parent)
     : QDialog(parent)
 {
